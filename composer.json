@@ -1,0 +1,39 @@
+{
+  "name": "skolica",
+  "license": "",
+  "type": "project",
+  "require": {
+    "php": ">=7",
+    "ext-intl": "*",
+    "guzzlehttp/guzzle": "^6.1",
+    "guzzlehttp/psr7": "*",
+    "zendframework/zend-json": "*",
+    "zendframework/zend-log": "*",
+    "zendframework/zend-config": "*",
+    "zendframework/zend-session": "*",
+    "zendframework/zend-mail": "*",
+    "zendframework/zend-mime": "*",
+    "firephp/firephp-core": "v0.4.0",
+    "monolog/monolog": "^1.18",
+    "php-di/php-di": "^5.2",
+    "nikic/fast-route": "0.8.0",
+    "twig/twig": "*",
+    "twig/extensions": "*",
+    "tamtamchik/simple-flash": "^1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "phpmd/phpmd": "*",
+    "robmorgan/phinx": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Skolica\\Core\\": "packages/Core/src",
+      "Skolica\\Admin\\": "packages/Admin/src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "bin-dir": "vendor/bin/"
+  }
+}
